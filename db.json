@@ -1,0 +1,278 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Reactive Glaze Bakeware Large",
+      "price":  "39",
+      "material": "ceramic",
+      "color": "blue",
+      "type": "bowl",
+      "dimensions": "13inw x 9ind x 3inh.",
+      "details": "Dishwasher, microwave and oven safe up to 480° Fahrenheit.",
+      "description": "Bring something special to the table for every meal with our Reactive Glaze Bakeware. Finished with a reactive glaze—a technique admired for its variegated coloring—each piece is subtly one-of-a-kind.<br>• Stoneware with a reactive glaze in Black / White.<br>• Due to the finishing technique, variations in glaze and color are to be expected.<br>• Sold individually.<br>• Made in Portugal.",
+      "image": "Reactive-Glaze-Bakeware.png"
+    },
+    {
+      "id": 2,
+      "name": "Ocean Waves Salad Plates (Set Of 4)",
+      "price": "41.6",
+      "material": "acrylic",
+      "color": "blue",
+      "type": "plate",
+      "dimensions": " 13inw x 3inh.",
+      "details": "Dishwasher, microwave and oven safe up to 480° Fahrenheit.",
+      "description": "Bring something special to the table for every meal with our Reactive Glaze Bakeware. Finished with a reactive glaze—a technique admired for its variegated coloring—each piece is subtly one-of-a-kind.<br>• Stoneware with a reactive glaze in Black / White.<br>• Due to the finishing technique, variations in glaze and color are to be expected.<br>• Sold individually.<br>• Made in Portugal.",
+      "image": "ocean-waves-salad-plates-set-of-4-o.png"
+      },
+    {
+      "id": 3,
+      "name": "Bormioli Glassware (Set Of 6)",
+      "price": "30",
+      "material": "glass",
+      "color": "white",
+      "type": "other",
+      "dimensions": "6.25ind x 2inh.",
+      "details": "Dishwasher, microwave and oven safe up to 480° Fahrenheit.",
+      "description": "Bring something special to the table for every meal with our Reactive Glaze Bakeware. Finished with a reactive glaze—a technique admired for its variegated coloring—each piece is subtly one-of-a-kind.<br>• Stoneware with a reactive glaze in Black / White.<br>• Due to the finishing technique, variations in glaze and color are to be expected.<br>• Sold individually.<br>• Made in Portugal.",
+      "image": "Bormioli Glassware (Set Of 6).png"
+    },
+    {
+      "id": 4,
+      "name": "Reactive Glaze Bakeware Small",
+      "price": "29",
+      "material": "ceramic",
+      "color": "blue",
+      "type": "bowl",
+      "dimensions": "9.5inw x 6.25ind x 2inh.",
+      "details": "Dishwasher, microwave and oven safe up to 480° Fahrenheit.",
+      "description": "Bring something special to the table for every meal with our Reactive Glaze Bakeware. Finished with a reactive glaze—a technique admired for its variegated coloring—each piece is subtly one-of-a-kind.<br>• Stoneware with a reactive glaze in Black / White.<br>• Due to the finishing technique, variations in glaze and color are to be expected.<br>• Sold individually.<br>• Made in Portugal.",
+      "image": "Reactive Glaze Bakeware-small.png"
+    },
+    {
+      "id": 5,
+      "name": "Bowl",
+      "price": "20",
+      "material": "enamel ",
+      "color": "green",
+      "type": "bowl",
+      "dimensions": "9.5inw x 6.25ind x 2inh.",
+      "details": "Dishwasher, microwave and oven safe up to 480° Fahrenheit.",
+      "description": "Bring something special to the table for every meal with our Reactive Glaze Bakeware. Finished with a reactive glaze—a technique admired for its variegated coloring—each piece is subtly one-of-a-kind.<br>• Stoneware with a reactive glaze in Black / White.<br>• Due to the finishing technique, variations in glaze and color are to be expected.<br>• Sold individually.<br>• Made in Portugal.",
+      "image": "Bowl.png"
+    },
+    {
+      "id": 6,
+      "name": "Cassiopea Decanter",
+      "price": "40",
+      "material": "glass",
+      "color": "white",
+      "type": "decanter",
+      "dimensions": "9.5inw x 6.25ind x 2inh.",
+      "details": "Dishwasher, microwave and oven safe up to 480° Fahrenheit.",
+      "description": "Bring something special to the table for every meal with our Reactive Glaze Bakeware. Finished with a reactive glaze—a technique admired for its variegated coloring—each piece is subtly one-of-a-kind.<br>• Stoneware with a reactive glaze in Black / White.<br>• Due to the finishing technique, variations in glaze and color are to be expected.<br>• Sold individually.<br>• Made in Portugal.",
+      "image": "Cassiopea Decanter.png"
+    },
+    {
+      "id": 7,
+      "name": "Essential Cutlery Set",
+      "price": "59",
+      "material": "metal",
+      "color": "grey",
+      "type": "cutlery",
+      "dimensions": "9.5inw x 6.25ind x 2inh.",
+      "details": "Dishwasher, microwave and oven safe up to 480° Fahrenheit.",
+      "description": "Bring something special to the table for every meal with our Reactive Glaze Bakeware. Finished with a reactive glaze—a technique admired for its variegated coloring—each piece is subtly one-of-a-kind.<br>• Stoneware with a reactive glaze in Black / White.<br>• Due to the finishing technique, variations in glaze and color are to be expected.<br>• Sold individually.<br>• Made in Portugal.",
+      "image": "Essential Cutlery Set.png"
+    },
+    {
+      "id": 8,
+      "name": "Glass Decanter",
+      "price": "59",
+      "material": "glass",
+      "color": "white",
+      "type": "decanter",
+      "dimensions": "9.5inw x 6.25ind x 2inh.",
+      "details": "Dishwasher, microwave and oven safe up to 480° Fahrenheit.",
+      "description": "Bring something special to the table for every meal with our Reactive Glaze Bakeware. Finished with a reactive glaze—a technique admired for its variegated coloring—each piece is subtly one-of-a-kind.<br>• Stoneware with a reactive glaze in Black / White.<br>• Due to the finishing technique, variations in glaze and color are to be expected.<br>• Sold individually.<br>• Made in Portugal.",
+      "image": "Glass Decanter.png"
+    },
+    {
+      "id": 9,
+      "name": "Gold Serving Spoons",
+      "price": "33",
+      "material": "enamel",
+      "color": "yellow",
+      "type": "cutlery",
+      "dimensions": "9.5inw x 6.25ind x 2inh.",
+      "details": "Dishwasher, microwave and oven safe up to 480° Fahrenheit.",
+      "description": "Bring something special to the table for every meal with our Reactive Glaze Bakeware. Finished with a reactive glaze—a technique admired for its variegated coloring—each piece is subtly one-of-a-kind.<br>• Stoneware with a reactive glaze in Black / White.<br>• Due to the finishing technique, variations in glaze and color are to be expected.<br>• Sold individually.<br>• Made in Portugal.",
+      "image": "Gold Serving Spoons.png"
+    },
+    {
+      "id": 10,
+      "name": "Kanto Sake Set 7",
+      "price": "34",
+      "material": "ceramic",
+      "color": "purple",
+      "type": "plate",
+      "dimensions": "9.5inw x 6.25ind x 2inh.",
+      "details": "Dishwasher, microwave and oven safe up to 480° Fahrenheit.",
+      "description": "Bring something special to the table for every meal with our Reactive Glaze Bakeware. Finished with a reactive glaze—a technique admired for its variegated coloring—each piece is subtly one-of-a-kind.<br>• Stoneware with a reactive glaze in Black / White.<br>• Due to the finishing technique, variations in glaze and color are to be expected.<br>• Sold individually.<br>• Made in Portugal.",
+      "image": "Kanto Sake Set 7.png"
+    },
+    {
+      "id": 11,
+      "name": "Kanto Sake Set",
+      "price": "39",
+      "material": "metal",
+      "color": "green",
+      "type": "other",
+      "dimensions": "9.5inw x 6.25ind x 2inh.",
+      "details": "Dishwasher, microwave and oven safe up to 480° Fahrenheit.",
+      "description": "Bring something special to the table for every meal with our Reactive Glaze Bakeware. Finished with a reactive glaze—a technique admired for its variegated coloring—each piece is subtly one-of-a-kind.<br>• Stoneware with a reactive glaze in Black / White.<br>• Due to the finishing technique, variations in glaze and color are to be expected.<br>• Sold individually.<br>• Made in Portugal.",
+      "image": "Kanto Sake Set.png"
+    },
+    {
+      "id": 12,
+      "name": "Kanto Set",
+      "price": "15",
+      "material": "metal",
+      "color": "black",
+      "type": "plate",
+      "dimensions": "9.5inw x 6.25ind x 2inh.",
+      "details": "Dishwasher, microwave and oven safe up to 480° Fahrenheit.",
+      "description": "Bring something special to the table for every meal with our Reactive Glaze Bakeware. Finished with a reactive glaze—a technique admired for its variegated coloring—each piece is subtly one-of-a-kind.<br>• Stoneware with a reactive glaze in Black / White.<br>• Due to the finishing technique, variations in glaze and color are to be expected.<br>• Sold individually.<br>• Made in Portugal.",
+      "image": "Kanto Set.png"
+    },
+    {
+      "id": 13,
+      "name": "Mug - Set Of 2",
+      "price": "10",
+      "material": "acrylic",
+      "color": "blue",
+      "type": "mug",
+      "dimensions": "9.5inw x 6.25ind x 2inh.",
+      "details": "Dishwasher, microwave and oven safe up to 480° Fahrenheit.",
+      "description": "Bring something special to the table for every meal with our Reactive Glaze Bakeware. Finished with a reactive glaze—a technique admired for its variegated coloring—each piece is subtly one-of-a-kind.<br>• Stoneware with a reactive glaze in Black / White.<br>• Due to the finishing technique, variations in glaze and color are to be expected.<br>• Sold individually.<br>• Made in Portugal.",
+      "image": "Mug - Set Of 2.png"
+    },
+    {
+      "id": 14,
+      "name": "Mug - Set Of 3",
+      "price": "15",
+      "material": "enamel",
+      "color": "yellow",
+      "type": "mug",
+      "dimensions": "9.5inw x 6.25ind x 2inh.",
+      "details": "Dishwasher, microwave and oven safe up to 480° Fahrenheit.",
+      "description": "Bring something special to the table for every meal with our Reactive Glaze Bakeware. Finished with a reactive glaze—a technique admired for its variegated coloring—each piece is subtly one-of-a-kind.<br>• Stoneware with a reactive glaze in Black / White.<br>• Due to the finishing technique, variations in glaze and color are to be expected.<br>• Sold individually.<br>• Made in Portugal.",
+      "image": "Mug - Set Of 3.png"
+    },
+    {
+      "id": 15,
+      "name": "Mug - Set Of 4",
+      "price": "29",
+      "material": "ceramic",
+      "color": "grey",
+      "type": "mug",
+      "dimensions": "9.5inw x 6.25ind x 2inh.",
+      "details": "Dishwasher, microwave and oven safe up to 480° Fahrenheit.",
+      "description": "Bring something special to the table for every meal with our Reactive Glaze Bakeware. Finished with a reactive glaze—a technique admired for its variegated coloring—each piece is subtly one-of-a-kind.<br>• Stoneware with a reactive glaze in Black / White.<br>• Due to the finishing technique, variations in glaze and color are to be expected.<br>• Sold individually.<br>• Made in Portugal.",
+      "image": "Mug - Set Of 4.png"
+    },
+    {
+      "id": 16,
+      "name": "Mug - Set Of 5",
+      "price": "38",
+      "material": "acrylic",
+      "color": "white",
+      "type": "mug",
+      "dimensions": "9.5inw x 6.25ind x 2inh.",
+      "details": "Dishwasher, microwave and oven safe up to 480° Fahrenheit.",
+      "description": "Bring something special to the table for every meal with our Reactive Glaze Bakeware. Finished with a reactive glaze—a technique admired for its variegated coloring—each piece is subtly one-of-a-kind.<br>• Stoneware with a reactive glaze in Black / White.<br>• Due to the finishing technique, variations in glaze and color are to be expected.<br>• Sold individually.<br>• Made in Portugal.",
+      "image": "Mug - Set Of 5.png"
+    },
+    {
+      "id": 17,
+      "name": "Mug (Set Of 6)",
+      "price": "39",
+      "material": "enamel",
+      "color": "grey",
+      "type": "mug",
+      "dimensions": "9.5inw x 6.25ind x 2inh.",
+      "details": "Dishwasher, microwave and oven safe up to 480° Fahrenheit.",
+      "description": "Bring something special to the table for every meal with our Reactive Glaze Bakeware. Finished with a reactive glaze—a technique admired for its variegated coloring—each piece is subtly one-of-a-kind.<br>• Stoneware with a reactive glaze in Black / White.<br>• Due to the finishing technique, variations in glaze and color are to be expected.<br>• Sold individually.<br>• Made in Portugal.",
+      "image": "Mug (Set Of 6).png"
+    },
+    {
+      "id": 18,
+      "name": "Pasta Bowl - Set of 4",
+      "price": "40",
+      "material": "ceramic",
+      "color": "green",
+      "type": "bowl",
+      "dimensions": "9.5inw x 6.25ind x 2inh.",
+      "details": "Dishwasher, microwave and oven safe up to 480° Fahrenheit.",
+      "description": "Bring something special to the table for every meal with our Reactive Glaze Bakeware. Finished with a reactive glaze—a technique admired for its variegated coloring—each piece is subtly one-of-a-kind.<br>• Stoneware with a reactive glaze in Black / White.<br>• Due to the finishing technique, variations in glaze and color are to be expected.<br>• Sold individually.<br>• Made in Portugal.",
+      "image": "Pasta Bowl - Set of 4.png"
+    },
+    {
+      "id": 19,
+      "name": "Pitcher",
+      "price": "29",
+      "material": "acrylic",
+      "color": "green",
+      "type": "pitcher",
+      "dimensions": "9.5inw x 6.25ind x 2inh.",
+      "details": "Dishwasher, microwave and oven safe up to 480° Fahrenheit.",
+      "description": "Bring something special to the table for every meal with our Reactive Glaze Bakeware. Finished with a reactive glaze—a technique admired for its variegated coloring—each piece is subtly one-of-a-kind.<br>• Stoneware with a reactive glaze in Black / White.<br>• Due to the finishing technique, variations in glaze and color are to be expected.<br>• Sold individually.<br>• Made in Portugal.",
+      "image": "Pitcher.png"
+    },
+    {
+      "id": 20,
+      "name": "Plate - Set Of 4",
+      "price": "19",
+      "material": "enamel",
+      "color": "grey",
+      "type": "plate",
+      "dimensions": "9.5inw x 6.25ind x 2inh.",
+      "details": "Dishwasher, microwave and oven safe up to 480° Fahrenheit.",
+      "description": "Bring something special to the table for every meal with our Reactive Glaze Bakeware. Finished with a reactive glaze—a technique admired for its variegated coloring—each piece is subtly one-of-a-kind.<br>• Stoneware with a reactive glaze in Black / White.<br>• Due to the finishing technique, variations in glaze and color are to be expected.<br>• Sold individually.<br>• Made in Portugal.",
+      "image": "Plate - Set Of 4.png"
+    },
+    {
+      "id": 21,
+      "name": "Waves Serving Platter set of 6",
+      "price": "129",
+      "material": "ceramic",
+      "color": "green",
+      "type": "plate",
+      "dimensions": "9.5inw x 6.25ind x 2inh.",
+      "details": "Dishwasher, microwave and oven safe up to 480° Fahrenheit.",
+      "description": "Bring something special to the table for every meal with our Reactive Glaze Bakeware. Finished with a reactive glaze—a technique admired for its variegated coloring—each piece is subtly one-of-a-kind.<br>• Stoneware with a reactive glaze in Black / White.<br>• Due to the finishing technique, variations in glaze and color are to be expected.<br>• Sold individually.<br>• Made in Portugal.",
+      "image": "Waves Serving Platter set of 6.png"
+    },
+    {
+      "id": 22,
+      "name": "Waves Serving Platter",
+      "price": "129",
+      "material": "acrylic",
+      "color": "black",
+      "type": "plate",
+      "dimensions": "9.5inw x 6.25ind x 2inh.",
+      "details": "Dishwasher, microwave and oven safe up to 480° Fahrenheit.",
+      "description": "Bring something special to the table for every meal with our Reactive Glaze Bakeware. Finished with a reactive glaze—a technique admired for its variegated coloring—each piece is subtly one-of-a-kind.<br>• Stoneware with a reactive glaze in Black / White.<br>• Due to the finishing technique, variations in glaze and color are to be expected.<br>• Sold individually.<br>• Made in Portugal.",
+      "image": "Waves Serving Platter.png"
+    }
+  ],
+
+
+  "users": [
+    {
+      "username": "123",
+      "gmail": "123",
+      "password": "123",
+      "id": "1"
+    }
+  ]
+}
