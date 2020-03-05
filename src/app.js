@@ -2,6 +2,7 @@ import { CONFIG } from './config';
 import { RenderPage } from './renderPage';
 import { Router } from './router';
 import { Cart } from './cart';
+import { Chechout } from './checkout';
 
 class App{
   constructor(){
@@ -10,6 +11,7 @@ class App{
     this.renderPage = new RenderPage(this.router);
     this.router  = new Router();
     this.cart = new Cart(this.products);
+    this.checkout = new Chechout(this.products);
     this.init();
   }
 
@@ -20,9 +22,10 @@ class App{
       this.products = data;
       this.renderPage.renderHomePage(data);
       this.renderPage.initProductPage(data);
-      this.cart.renderCartItem();
       this.cart.addProduct(data);
-      
+      this.cart.renderCartPage();
+      this.cart.renderCartItem();
+      // this.checkout.initCheckoutPage();
       this.initRouter();
       this.router.render(decodeURI(location.pathname));
 

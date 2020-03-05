@@ -3,10 +3,16 @@ export const CONFIG = {
   selectors:{
     productsList: ".products",
     colProduct: ".product-item",
-    mainContent: ".main-content, .page",
-    btnAdd: ".btn-add",
+    mainContent: ".main-page, .page",
+    btnAdd: ".btn-add, .product-page",
     cartIcon: ".cart-icon",
-    xboxCart: ".xbox-cart"
+    xboxCart: ".xbox-cart",
+    cartBtn: ".cart-btn",
+    cartHeader: ".cart-header",
+    cartFooter: ".cart-footer",
+    cartResult: ".cart-result",
+    removeBtn: ".remove-btn",
+    checkoutBtnSingle: ".checkout-btn-single"
 
 
   },
