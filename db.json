@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "Reactive Glaze Bakeware Large",
-      "price":  "12",
+      "price": "12",
       "material": "ceramic",
       "color": "blue",
       "type": "bowl",
@@ -263,16 +263,56 @@
       "details": "Dishwasher, microwave and oven safe up to 480° Fahrenheit.",
       "description": "Bring something special to the table for every meal with our Reactive Glaze Bakeware. Finished with a reactive glaze—a technique admired for its variegated coloring—each piece is subtly one-of-a-kind.<br>• Stoneware with a reactive glaze in Black / White.<br>• Due to the finishing technique, variations in glaze and color are to be expected.<br>• Sold individually.<br>• Made in Belarus.",
       "image": "/img/homepage-up/ocean-waves-salad-plates-set-of-4-o.png"
-      }
+    }
   ],
-
-
   "users": [
     {
-      "username": "123",
-      "gmail": "123",
-      "password": "123",
-      "id": "1"
+      "username": "Zmicier",
+      "gmail": "zmicierd@gmail.com",
+      "password": "1234321",
+      "id": "o2CJ1if"
+    },
+    {
+      "username": "Zmicier",
+      "gmail": "zmicierd@gmail.com",
+      "password": "1234321",
+      "id": "Hfc4saQ"
+    },
+    {
+      "username": "Zmicier",
+      "gmail": "zmicierd@gmail.com",
+      "password": "1234321",
+      "id": "DUGlLKy"
+    },
+    {
+      "username": "Zmicier",
+      "gmail": "zmicierd@gmail.com",
+      "password": "1234321",
+      "id": "q_a601q"
+    },
+    {
+      "username": "Zmicier",
+      "gmail": "zmicierd@gmail.com",
+      "password": "1234321",
+      "id": "Db4eIfB"
+    },
+    {
+      "username": "Zmicier",
+      "gmail": "zmicierd@gmail.com",
+      "password": "1234321",
+      "id": "NK5m0Yr"
+    },
+    {
+      "username": "Zmicier",
+      "gmail": "zmicierd@gmail.com",
+      "password": "1234321",
+      "id": "l_XJz3Y"
+    },
+    {
+      "username": "Zmicier",
+      "gmail": "zmicierd@gmail.com",
+      "password": "1234321",
+      "id": "DGLF1cx"
     }
   ]
 }

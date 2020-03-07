@@ -50,13 +50,18 @@ export class Cart{
 
   renderCartPage(){
     const cartBtn = document.querySelector(CONFIG.selectors.cartBtn);
- 
     cartBtn.addEventListener('click', e => {
       e.preventDefault();
+      window.history.pushState(null, null, '/cart');
+      // this.router.render(decodeURI(location.pathname));
       this.reRenderCartPage();
+      
     })
   }
   reRenderCartPage(){
+    const index = location.pathname.split('/')[1].trim();
+    console.log('index', index)
+     if(String(index) === String('cart')){
       const mainContent = document.querySelector(CONFIG.selectors.mainContent);
       mainContent.innerHTML = '';
       const vat = document.querySelector(CONFIG.selectors.cartHeader);
@@ -99,15 +104,21 @@ export class Cart{
                   div.innerHTML = `<div class="result-price">$${this.sum}</div>`;
                   this.removeCartProduct();
                   this.checkout.initCheckoutPage();
+    }
   }
+  
 
 
   removeCartProduct(){
     const removeBtn = document.querySelectorAll(CONFIG.selectors.removeBtn);
     removeBtn.forEach((item) => {
       item.addEventListener('click', e =>{
+        item.parentElement.parentElement.parentElement.classList.add(CONFIG.hidden);
         const index = item.dataset.id;
-        this.arrProduct = this.arrProduct.filter(i => String(i.id) !== String(index));
+        const gfhdg = this.arrProduct.find(i => String(i.id) !== String(index));
+        let ind = this.arrProduct.indexOf(gfhdg);
+        this.arrProduct.splice(ind, 1);
+        console.log('this.arrProduct', this.arrProduct)
         window.localStorage.removeItem('cart');
         const data = JSON.stringify(this.arrProduct);
         window.localStorage.setItem("cart", data);

@@ -21,9 +21,6 @@ export class RenderPage {
                   <button class="btn-add" data-id="${item.id}">ADD TO CART</button>
                 </div>`
     });
-    // window.history.pushState(null, null, `/kelishak/home`);
-    // this.router.render(decodeURI(location.pathname));
-
   }
 
   initProductPage(products) {
@@ -32,13 +29,15 @@ export class RenderPage {
       item.addEventListener('click', e => {
         const index = item.dataset.id;
         console.log('index', index)
-        window.history.pushState(null, null, `products/${index}`);
-        // this.router.render(decodeURI(location.pathname));
-        this.renderProductPage(products, index);
+        window.history.pushState(null, null, `product/${index}`);
+        this.router.render(decodeURI(location.pathname));
+        this.renderProductPage(products);
       })
     })
   }
-  renderProductPage(products, index){
+  
+  renderProductPage(products){
+    const index = location.pathname.split('/product/')[1].trim();
     products.forEach((item) => {
       if (item.id === Number(index)) {
         const page = document.querySelector(CONFIG.selectors.mainContent);
@@ -110,4 +109,45 @@ export class RenderPage {
       }
     })
   }
+
+  filterResult(products, filter) {
+    console.log(filter);
+    const options = CONFIG.filterItem;
+    let productsCopy = [...products];
+    let result = [];
+    let isFiltered = false;
+    this.clearCheckbox();
+
+    options.forEach((option) => {
+      if(filter[option] && filter[option].length) {
+        if (isFiltered) {
+          productsCopy = result;
+          result = [];
+        }
+        console.log(option);
+        filter[option].forEach((item) => {
+          productsCopy.forEach((product) => {
+            if (typeof product.specs[option] === 'number' &&
+              product.specs[option] === Number(item)) {
+              result.push(product);
+              isFiltered = true;
+            }
+
+            if (typeof product.specs[option] === 'string' &&
+              product.specs[option].toLowerCase().indexOf(item) !== -1) {
+              result.push(product);
+              isFiltered = true;
+            }
+          });
+            [...document.querySelectorAll(`input[name=${option}]`)].filter((checkbox) => {
+              return checkbox.value === item;
+            })[0].checked = true;
+        });
+      }
+    });
+    return result;
+  }
+
+
+
 }

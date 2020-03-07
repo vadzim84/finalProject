@@ -118,27 +118,27 @@
                     <div class="card-body" id="card-body">
                       <div class="material">
                         <label for="ceramic">Ceramic</label>
-                        <input type="checkbox" id="ceramic">
+                        <input type="checkbox" name="material" id="ceramic">
                       </div>
   
                       <div class="material">
                         <label for="acrylic">Acrylic</label>
-                        <input type="checkbox" id="acrylic">
+                        <input type="checkbox" name="material" id="acrylic">
                       </div>
   
                       <div class="material">
                         <label for="glass">Glass</label>
-                        <input type="checkbox" id="glass">
+                        <input type="checkbox" name="material" id="glass">
                       </div>
   
                       <div class="material">
                         <label for="enamel">Enamel</label>
-                        <input type="checkbox" id="enamel">
+                        <input type="checkbox" name="material" id="enamel">
                       </div>
   
                       <div class="material">
                         <label for="metal">Metal</label>
-                        <input type="checkbox" id="metal">
+                        <input type="checkbox" name="material" id="metal">
                       </div>
   
   
@@ -167,49 +167,49 @@
   
                             <label class="btn"
                               style="background:  #FFFFFF; border-radius: 50%; margin-right: 5px; width: 30px; height: 30px;">
-                              <input type="checkbox" autocomplete="off">
+                              <input type="checkbox" id="white" name="color" autocomplete="off">
                               <span class="glyphicon glyphicon-ok"></span>
                             </label>
   
                             <label class="btn"
                               style="background:  #C4C4C4; border-radius: 50%; margin-right: 5px; width: 30px; height: 30px;">
-                              <input type="checkbox" autocomplete="off">
+                              <input type="checkbox" id="grey" name="color" autocomplete="off">
                               <span class="glyphicon glyphicon-ok"></span>
                             </label>
   
                             <label class="btn"
                               style="background: #46749B; border-radius: 50%; margin-right: 5px; width: 30px; height: 30px;">
-                              <input type="checkbox" autocomplete="off">
+                              <input type="checkbox" id="blue" name="color" autocomplete="off">
                               <span class="glyphicon glyphicon-ok"></span>
                             </label>
   
                             <label class="btn"
                               style="background: #14292F; border-radius: 50%; margin-right: 5px; width: 30px; height: 30px;">
-                              <input type="checkbox" autocomplete="off">
+                              <input type="checkbox" id="black" name="color" autocomplete="off">
                               <span class="glyphicon glyphicon-ok"></span>
                             </label>
   
                             <label class="btn"
                               style="background:  #EECC1C; border-radius: 50%; margin-right: 5px; width: 30px; height: 30px;">
-                              <input type="checkbox" autocomplete="off">
+                              <input type="checkbox"  id="yellow" name="color" autocomplete="off">
                               <span class="glyphicon glyphicon-ok"></span>
                             </label>
   
                             <label class="btn"
                               style="background:  #26A723; border-radius: 50%; margin-right: 5px; width: 30px; height: 30px;">
-                              <input type="checkbox" autocomplete="off">
+                              <input type="checkbox" id="green" name="color" autocomplete="off">
                               <span class="glyphicon glyphicon-ok"></span>
                             </label>
   
                             <label class="btn"
                               style="background:  #EB1919; border-radius: 50%; margin-right: 5px; width: 30px; height: 30px;">
-                              <input type="checkbox" autocomplete="off">
+                              <input type="checkbox" id="red" name="color" autocomplete="off">
                               <span class="glyphicon glyphicon-ok"></span>
                             </label>
   
                             <label class="btn"
                               style="background:  #D59DCF; border-radius: 50%; margin-right: 5px; width: 30px; height: 30px;">
-                              <input type="checkbox" autocomplete="off">
+                              <input type="checkbox" name="color" id="purple" autocomplete="off">
                               <span class="glyphicon glyphicon-ok"></span>
                             </label>
   
@@ -238,32 +238,32 @@
                      
                         <div class="type">
                           <label for="bowl">Bowl</label>
-                          <input type="checkbox" id="bowl">
+                          <input type="checkbox" name="type" id="bowl">
                         </div>
   
                         <div class="type">
                           <label for="plate">Plate</label>
-                          <input type="checkbox" id="plate">
+                          <input type="checkbox" name="type" id="plate">
                         </div>
   
                         <div class="type">
                           <label for="decanter">Decanter</label>
-                          <input type="checkbox" id="decanter">
+                          <input type="checkbox" name="type" id="decanter">
                         </div>
   
                         <div class="type">
                           <label for="cutlery">Cutlery</label>
-                          <input type="checkbox" id="cutlery">
+                          <input type="checkbox" name="type" id="cutlery">
                         </div>
   
                         <div class="type">
                           <label for="mug">Mug</label>
-                          <input type="checkbox" id="mug">
+                          <input type="checkbox" name="type" id="mug">
                         </div>
   
                         <div class="type">
                           <label for="pitcher">Pitcher</label>
-                          <input type="checkbox" id="pitcher">
+                          <input type="checkbox" name="type" id="pitcher">
                         </div>
   
   
@@ -363,8 +363,39 @@
 
       </div>
 
-      
 
+
+
+
+      <form class="cmxform" id="commentForm" novalidate method="get" action="">
+        <fieldset>
+            <legend>Please provide your name, email address (won't be published) and a comment</legend>
+            <p>
+    <!--            <label for="cname">Name (required, at least 2 characters)</label>-->
+                <span>Name:</span>
+                <input id="cname" name="name" type="text">
+            <p>
+                <label for="cemail">E-Mail</label>
+                <input id="cemail" type="email" name="contact">
+                <input type="checkbox" name="emailcheck" id="emailcheck">
+            </p>
+            <p>
+                <label for="curl">URL (optional)</label>
+                <input id="curl" type="url" name="url">
+            </p>
+            <p>
+                <label for="ccomment">Your comment (required)</label>
+                <textarea id="ccomment" name="comment"></textarea>
+            </p>
+            <p>
+                <input class="submit" type="submit" value="Submit">
+            </p>
+        </fieldset>
+    </form>
+
+
+
+    
 
 <div class="container footer">
         <div class="container">

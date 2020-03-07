@@ -18,13 +18,28 @@ export class Chechout{
   }
 
   renderCheckoutPage(index){
-    this.products
-    
-    
-    
+    // this.products
+    // console.log('this.products', this.products)
+    const data = {
+      username: "Zmicier",
+      "gmail": "zmicierd@gmail.com",
+      "password": "1234321",
+    }
 
+    fetch(`${CONFIG.api}/users`, {
+      method: 'POST',
+      body: JSON.stringify(data),
+      headers: {
+        'Content-Type': 'application/json',
+      }
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log('data', data)
+        
+      })
+    
   }
-
 
 
 }

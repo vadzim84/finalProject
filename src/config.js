@@ -12,10 +12,12 @@ export const CONFIG = {
     cartFooter: ".cart-footer",
     cartResult: ".cart-result",
     removeBtn: ".remove-btn",
-    checkoutBtnSingle: ".checkout-btn-single"
+    checkoutBtnSingle: ".checkout-btn-single",
+    checkbox: ".checkboks-list input[type=checkbox]"
 
 
   },
   hidden: 'hidden',
   visible: 'visible',
+  filterItem: ['material, color, type']
 }
