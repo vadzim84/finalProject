@@ -255,7 +255,7 @@
     {
       "id": 22,
       "name": "Ocean Waves Salad Plates (Set Of 4)",
-      "price": "41.6",
+      "price": "16.4",
       "material": "acrylic",
       "color": "blue",
       "type": "plate",
@@ -267,52 +267,25 @@
   ],
   "users": [
     {
-      "username": "Zmicier",
-      "gmail": "zmicierd@gmail.com",
-      "password": "1234321",
-      "id": "o2CJ1if"
+      "userFName": "Vadzim",
+      "userSName": "Karanets",
+      "email": "vkaraniec@gmail.com",
+      "password": "123456",
+      "id": "bFC0_4P"
     },
     {
-      "username": "Zmicier",
-      "gmail": "zmicierd@gmail.com",
-      "password": "1234321",
-      "id": "Hfc4saQ"
+      "userFName": "Vadzim",
+      "userSName": "Karanets",
+      "email": "vkaraniec@gmail.com",
+      "password": "654321",
+      "id": "gvTgTDj"
     },
     {
-      "username": "Zmicier",
-      "gmail": "zmicierd@gmail.com",
-      "password": "1234321",
-      "id": "DUGlLKy"
-    },
-    {
-      "username": "Zmicier",
-      "gmail": "zmicierd@gmail.com",
-      "password": "1234321",
-      "id": "q_a601q"
-    },
-    {
-      "username": "Zmicier",
-      "gmail": "zmicierd@gmail.com",
-      "password": "1234321",
-      "id": "Db4eIfB"
-    },
-    {
-      "username": "Zmicier",
-      "gmail": "zmicierd@gmail.com",
-      "password": "1234321",
-      "id": "NK5m0Yr"
-    },
-    {
-      "username": "Zmicier",
-      "gmail": "zmicierd@gmail.com",
-      "password": "1234321",
-      "id": "l_XJz3Y"
-    },
-    {
-      "username": "Zmicier",
-      "gmail": "zmicierd@gmail.com",
-      "password": "1234321",
-      "id": "DGLF1cx"
+      "userFName": "Vadzim",
+      "userSName": "Karanets",
+      "email": "vkaraniec@gmail.com",
+      "password": "zxcvbn",
+      "id": "7vqKith"
     }
   ]
 }

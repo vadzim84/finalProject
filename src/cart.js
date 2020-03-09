@@ -3,9 +3,13 @@ import { Chechout } from "./checkout";
 
 
 export class Cart{
-  constructor(product){
+  constructor(products, router){
     this.arrProduct = [];
     this.checkout = new Chechout();
+    this.products = products;
+    this.router = router;
+    // this.initCartPage();
+
     
   }
 
@@ -13,7 +17,6 @@ export class Cart{
     const btnAdd = document.querySelectorAll(CONFIG.selectors.btnAdd);
     btnAdd.forEach((item) => {
       item.addEventListener('click', e => {
-        console.log('e', e)
         const index = item.dataset.id;
         products.forEach((item) => {
           if (item.id === Number(index)) {
@@ -48,19 +51,17 @@ export class Cart{
     }
   }
 
-  renderCartPage(){
+  initCartPage(){
     const cartBtn = document.querySelector(CONFIG.selectors.cartBtn);
     cartBtn.addEventListener('click', e => {
       e.preventDefault();
       window.history.pushState(null, null, '/cart');
-      // this.router.render(decodeURI(location.pathname));
-      this.reRenderCartPage();
-      
+      this.router.render(decodeURI(location.pathname));
+      this.renderCartPage();
     })
   }
-  reRenderCartPage(){
+  renderCartPage(){
     const index = location.pathname.split('/')[1].trim();
-    console.log('index', index)
      if(String(index) === String('cart')){
       const mainContent = document.querySelector(CONFIG.selectors.mainContent);
       mainContent.innerHTML = '';
@@ -115,7 +116,7 @@ export class Cart{
       item.addEventListener('click', e =>{
         item.parentElement.parentElement.parentElement.classList.add(CONFIG.hidden);
         const index = item.dataset.id;
-        const gfhdg = this.arrProduct.find(i => String(i.id) !== String(index));
+        const gfhdg = this.arrProduct.find(i => String(i.id) === String(index));
         let ind = this.arrProduct.indexOf(gfhdg);
         this.arrProduct.splice(ind, 1);
         console.log('this.arrProduct', this.arrProduct)
@@ -123,7 +124,7 @@ export class Cart{
         const data = JSON.stringify(this.arrProduct);
         window.localStorage.setItem("cart", data);
         this.renderCartItem();
-        this.reRenderCartPage();
+        this.renderCartPage();
       })
     })
   }

@@ -3,7 +3,8 @@ export const CONFIG = {
   selectors:{
     productsList: ".products",
     colProduct: ".product-item",
-    mainContent: ".main-page, .page",
+    mainContent: ".main-page",
+    homePage: ".home-page",
     btnAdd: ".btn-add, .product-page",
     cartIcon: ".cart-icon",
     xboxCart: ".xbox-cart",
@@ -13,7 +14,11 @@ export const CONFIG = {
     cartResult: ".cart-result",
     removeBtn: ".remove-btn",
     checkoutBtnSingle: ".checkout-btn-single",
-    checkbox: ".checkboks-list input[type=checkbox]"
+    checkbox: ".checkboks-list input[type=checkbox]",
+    searchBtn: ".search-btn input",
+    mainContentList: ".main-content-list",
+    authorizeBtn: ".authorize-btn",
+    autorizatePage: ".authorisait-page"
 
 
   },

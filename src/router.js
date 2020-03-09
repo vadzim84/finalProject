@@ -7,12 +7,7 @@ export class Router{
       '404': () => {
           console.log('Not found');
       },
-      'about': () => {
-          console.log('about')
-      },
-      'search': () => {
-          console.log('search')
-      }
+     
     }  
     this.mainContent = document.querySelector(CONFIG.selectors.mainContent);
     console.log('this.mainContent', this.mainContent)
@@ -31,8 +26,7 @@ export class Router{
   render(url){
     let temp = url.split('/')[1];
     [...this.mainContent].forEach((page) => {
-        page.innerHTML = '';
-      // page.classList.remove(CONFIG.visible)
+        page.classList.remove(CONFIG.visible)
         console.log('page', page)
     });
     this.routes[temp] ? this.routes[temp]() : this.routes['404']();

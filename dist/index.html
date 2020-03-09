@@ -20,32 +20,6 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
-
-    <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="/resources/demos/style.css">
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script>
-  $( function() {
-    $( "#slider-range" ).slider({
-      range: true,
-      min: 0,
-      max: 150,
-      values: [ 5, 52 ],
-      slide: function( event, ui ) {
-        $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
-      }
-    });
-    $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
-      " - $" + $( "#slider-range" ).slider( "values", 1 ) );
-  } );
-  </script> -->
-
-
-
-
-
-    
 </head>
 
 <body>
@@ -54,222 +28,260 @@
       <div class="container">
         <div class="row navbar">
           <div class="col-2 logo"><a href="">Kelishak</a></div>
-          <div class="col-8 nav-set">
+          <div class="col-6 nav-set">
             <div class="nav-item"><a class=" nav-link" href="">New</a></div>
             <div class="nav-item"><a class=" nav-link" href="">Collection</a></div>
             <div class="nav-item"><a class=" nav-link" href="">Bestsellers</a></div>
-            <div class="nav-item"><a class=" nav-link" href="">Gift Guide</a></div>
-            <div class="nav-item"><a class=" nav-link" href="">Sale</a></div>
+            <!-- <div class="nav-item"><a class=" nav-link" href="">Gift Guide</a></div> -->
+            <!-- <div class="nav-item"><a class=" nav-link" href="">Sale</a></div> -->
           </div>
-          <div class="col-2 client-items">
-            <div><a class="nav-link" href=""><img src="/./img/search.svg" class="search" alt=""></a></div>
-            <div><a class="nav-link" href=""><img src="/./img/contact.svg" class="contact" alt=""></a></div>
-            <div><a class="nav-link cart-btn" href=""><img src="/./img/basket.svg" class="cart" alt=""><div class="cart-icon"></div></a></div>
+          
+          <div class="col-4 client-items">
+            <div class="alert-primary aurth-ok hidden">
+              You are authorized!
+            </div>
+            <div class="nav-link search-btn" href="">
+              <form>
+                <input type="text" placeholder="Search...">
+                <a> <button type="submit"><img src="/./img/search.svg" class="search" alt=""></button></a>
+              </form>
+            </div>
+            <div><a class="nav-link authorize-btn" href=""><img src="/./img/contact.svg" class="contact" alt=""></a>
+              
+            </div>
+            <div><a class="nav-link cart-btn" href=""><img src="/./img/basket.svg" class="cart" alt="">
+                <div class="cart-icon"></div>
+              </a></div>
+             
           </div>
+          
         </div>
       </div>
+    </div>
+    <div class="container">
+    <div class="bying row hidden " style="justify-content: space-around; align-items: center;margin: 50px;">
+      <div class="col-8"><input type="text" style="width: 300px; height: 200px;" placeholder="Enter your shipping address "></div>
+      <div clss="col-4"><button style="width: 140px;
+        height: 50px;
+        background: #112D45;
+        border: 1px solid #112D45;
+        box-sizing: border-box;
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 20px;
+        text-align: center;
+        color: #FFFFFF;">BUY</button></div>
+      </div>
+
     </div>
 
 
 
     <div class="main-content">
 
-      <div class="cart-header container hidden">
-        <div>
-          <div class="cart-name">Cart</div>
-        </div>
-        <div class="cart-row-up row">
-          <div class="cart-quantity col-8">Quantity</div>
-          <div class="cart-total-up col-4">Total</div>
-        </div>
-        <div class="line"></div>
-      </div>
+      
+      <div class="errorPage hidden" style="display: block; "><img src="/./img/oops.jpg" alt="" style="width: 100%;"></div>
+      <div class="main-content-list">
+       
 
-      <div class="main-page">
-        <div class="home-page container">
-          <div class="sale">
-            <div class="old-price">Ocean Waves Salad Plates (Set Of 4) <br>
-              <div class="old">$104</div>
-            </div>
-            <div class="new-price">Limited Time Offer <br> $41.6 <br> 60% off!</div>
-            <button class="btn-lrg btn-add" data-id="22">buy now</button>
+        <div class="cart-header container hidden">
+          <div>
+            <div class="cart-name">Cart</div>
           </div>
-          <img src="/./img/homepage-up/ocean-waves-salad-plates-set-of-4-o.png" alt="">
+          <div class="cart-row-up row">
+            <div class="cart-quantity col-8">Quantity</div>
+            <div class="cart-total-up col-4">Total</div>
+          </div>
+          <div class="line"></div>
         </div>
-  
-  
-  
-        <div class="products-page container">
-          <div class="row">
-            <div class="checkboks-list col-3">
-  
-              <div id="accordion">
-  
-                <div class="card" id="card">
-                  <div class="card-header" id=" card-header">
-                    <h5 class="mb-0">
-                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
-                        aria-expanded="false" aria-controls="collapseTwo">
-                        Material
-                      </button>
-                    </h5>
-                  </div>
-                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" >
-                    <div class="card-body" id="card-body">
-                      <div class="material">
-                        <label for="ceramic">Ceramic</label>
-                        <input type="checkbox" name="material" id="ceramic">
-                      </div>
-  
-                      <div class="material">
-                        <label for="acrylic">Acrylic</label>
-                        <input type="checkbox" name="material" id="acrylic">
-                      </div>
-  
-                      <div class="material">
-                        <label for="glass">Glass</label>
-                        <input type="checkbox" name="material" id="glass">
-                      </div>
-  
-                      <div class="material">
-                        <label for="enamel">Enamel</label>
-                        <input type="checkbox" name="material" id="enamel">
-                      </div>
-  
-                      <div class="material">
-                        <label for="metal">Metal</label>
-                        <input type="checkbox" name="material" id="metal">
-                      </div>
-  
-  
-  
+
+        <div class="main-page">
+          <div class="home-page container">
+            <div class="sale">
+              <div class="old-price">Ocean Waves Salad Plates (Set Of 4) <br>
+                <div class="old">$41</div>
+              </div>
+              <div class="new-price">Limited Time Offer <br> $16.4 <br> 60% off!</div>
+              <button class="btn-lrg btn-add" data-id="22">add to cart</button>
+            </div>
+            <img src="/./img/homepage-up/ocean-waves-salad-plates-set-of-4-o.png" alt="">
+          </div>
+
+
+
+          <div class="products-page container">
+            <div class="row">
+              <div class="checkboks-list col-3">
+
+                <div id="accordion">
+
+                  <div class="card" id="card">
+                    <div class="card-header" id=" card-header">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                          aria-expanded="false" aria-controls="collapseTwo">
+                          Material
+                        </button>
+                      </h5>
                     </div>
-                  </div>
-                </div>
-  
-                <div class="card" id="card">
-                  <div class="card-header" id="headingThree card-header">
-                    <h5 class="mb-0">
-                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
-                        aria-expanded="true" aria-controls="collapseThree">
-                        Color
-                      </button>
-                    </h5>
-                  </div>
-                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" >
-                    <div class="card-body">
-                      <div class="container">
-  
-                        <div class="well well-sm text-center" style="width: 160px; left: 400px;">
-  
-  
-                          <div class="btn-group" data-toggle="buttons" style="display: inline;">
-  
-                            <label class="btn"
-                              style="background:  #FFFFFF; border-radius: 50%; margin-right: 5px; width: 30px; height: 30px;">
-                              <input type="checkbox" id="white" name="color" autocomplete="off">
-                              <span class="glyphicon glyphicon-ok"></span>
-                            </label>
-  
-                            <label class="btn"
-                              style="background:  #C4C4C4; border-radius: 50%; margin-right: 5px; width: 30px; height: 30px;">
-                              <input type="checkbox" id="grey" name="color" autocomplete="off">
-                              <span class="glyphicon glyphicon-ok"></span>
-                            </label>
-  
-                            <label class="btn"
-                              style="background: #46749B; border-radius: 50%; margin-right: 5px; width: 30px; height: 30px;">
-                              <input type="checkbox" id="blue" name="color" autocomplete="off">
-                              <span class="glyphicon glyphicon-ok"></span>
-                            </label>
-  
-                            <label class="btn"
-                              style="background: #14292F; border-radius: 50%; margin-right: 5px; width: 30px; height: 30px;">
-                              <input type="checkbox" id="black" name="color" autocomplete="off">
-                              <span class="glyphicon glyphicon-ok"></span>
-                            </label>
-  
-                            <label class="btn"
-                              style="background:  #EECC1C; border-radius: 50%; margin-right: 5px; width: 30px; height: 30px;">
-                              <input type="checkbox"  id="yellow" name="color" autocomplete="off">
-                              <span class="glyphicon glyphicon-ok"></span>
-                            </label>
-  
-                            <label class="btn"
-                              style="background:  #26A723; border-radius: 50%; margin-right: 5px; width: 30px; height: 30px;">
-                              <input type="checkbox" id="green" name="color" autocomplete="off">
-                              <span class="glyphicon glyphicon-ok"></span>
-                            </label>
-  
-                            <label class="btn"
-                              style="background:  #EB1919; border-radius: 50%; margin-right: 5px; width: 30px; height: 30px;">
-                              <input type="checkbox" id="red" name="color" autocomplete="off">
-                              <span class="glyphicon glyphicon-ok"></span>
-                            </label>
-  
-                            <label class="btn"
-                              style="background:  #D59DCF; border-radius: 50%; margin-right: 5px; width: 30px; height: 30px;">
-                              <input type="checkbox" name="color" id="purple" autocomplete="off">
-                              <span class="glyphicon glyphicon-ok"></span>
-                            </label>
-  
-                          </div>
-  
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo">
+                      <div class="card-body" id="card-body">
+                        <div class="material">
+                          <label for="ceramic">Ceramic</label>
+                          <input type="checkbox" name="material" id="ceramic">
                         </div>
-  
+
+                        <div class="material">
+                          <label for="acrylic">Acrylic</label>
+                          <input type="checkbox" name="material" id="acrylic">
+                        </div>
+
+                        <div class="material">
+                          <label for="glass">Glass</label>
+                          <input type="checkbox" name="material" id="glass">
+                        </div>
+
+                        <div class="material">
+                          <label for="enamel">Enamel</label>
+                          <input type="checkbox" name="material" id="enamel">
+                        </div>
+
+                        <div class="material">
+                          <label for="metal">Metal</label>
+                          <input type="checkbox" name="material" id="metal">
+                        </div>
+
+
+
                       </div>
                     </div>
                   </div>
-                </div>
-  
-                <div class="card" id="card">
-                  <div class="card-header" id="headingFour card-header">
-                    <h5 class="mb-0">
-                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"
-                        aria-expanded="false" aria-controls="collapseFour">
-                        Type
-                      </button>
-                    </h5>
+
+                  <div class="card" id="card">
+                    <div class="card-header" id="headingThree card-header">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                          aria-expanded="true" aria-controls="collapseThree">
+                          Color
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree">
+                      <div class="card-body">
+                        <div class="container">
+
+                          <div class="well well-sm text-center" style="width: 160px; left: 400px;">
+
+
+                            <div class="btn-group" data-toggle="buttons" style="display: inline;">
+
+                              <label class="btn"
+                                style="background:  #FFFFFF; border-radius: 50%; margin-right: 5px; width: 30px; height: 30px;">
+                                <input type="checkbox" id="white" name="color" autocomplete="off">
+                                <span class="glyphicon glyphicon-ok"></span>
+                              </label>
+
+                              <label class="btn"
+                                style="background:  #C4C4C4; border-radius: 50%; margin-right: 5px; width: 30px; height: 30px;">
+                                <input type="checkbox" id="grey" name="color" autocomplete="off">
+                                <span class="glyphicon glyphicon-ok"></span>
+                              </label>
+
+                              <label class="btn"
+                                style="background: #46749B; border-radius: 50%; margin-right: 5px; width: 30px; height: 30px;">
+                                <input type="checkbox" id="blue" name="color" autocomplete="off">
+                                <span class="glyphicon glyphicon-ok"></span>
+                              </label>
+
+                              <label class="btn"
+                                style="background: #14292F; border-radius: 50%; margin-right: 5px; width: 30px; height: 30px;">
+                                <input type="checkbox" id="black" name="color" autocomplete="off">
+                                <span class="glyphicon glyphicon-ok"></span>
+                              </label>
+
+                              <label class="btn"
+                                style="background:  #EECC1C; border-radius: 50%; margin-right: 5px; width: 30px; height: 30px;">
+                                <input type="checkbox" id="yellow" name="color" autocomplete="off">
+                                <span class="glyphicon glyphicon-ok"></span>
+                              </label>
+
+                              <label class="btn"
+                                style="background:  #26A723; border-radius: 50%; margin-right: 5px; width: 30px; height: 30px;">
+                                <input type="checkbox" id="green" name="color" autocomplete="off">
+                                <span class="glyphicon glyphicon-ok"></span>
+                              </label>
+
+                              <label class="btn"
+                                style="background:  #EB1919; border-radius: 50%; margin-right: 5px; width: 30px; height: 30px;">
+                                <input type="checkbox" id="red" name="color" autocomplete="off">
+                                <span class="glyphicon glyphicon-ok"></span>
+                              </label>
+
+                              <label class="btn"
+                                style="background:  #D59DCF; border-radius: 50%; margin-right: 5px; width: 30px; height: 30px;">
+                                <input type="checkbox" name="color" id="purple" autocomplete="off">
+                                <span class="glyphicon glyphicon-ok"></span>
+                              </label>
+
+                            </div>
+
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
                   </div>
-  
-                  <div id="collapseFour" class="collapse" aria-labelledby="headingFour" >
-                    <div class="card-body" id="card-body">
-  
-                     
+
+                  <div class="card" id="card">
+                    <div class="card-header" id="headingFour card-header">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"
+                          aria-expanded="false" aria-controls="collapseFour">
+                          Type
+                        </button>
+                      </h5>
+                    </div>
+
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour">
+                      <div class="card-body" id="card-body">
+
+
                         <div class="type">
                           <label for="bowl">Bowl</label>
                           <input type="checkbox" name="type" id="bowl">
                         </div>
-  
+
                         <div class="type">
                           <label for="plate">Plate</label>
                           <input type="checkbox" name="type" id="plate">
                         </div>
-  
+
                         <div class="type">
                           <label for="decanter">Decanter</label>
                           <input type="checkbox" name="type" id="decanter">
                         </div>
-  
+
                         <div class="type">
                           <label for="cutlery">Cutlery</label>
                           <input type="checkbox" name="type" id="cutlery">
                         </div>
-  
+
                         <div class="type">
                           <label for="mug">Mug</label>
                           <input type="checkbox" name="type" id="mug">
                         </div>
-  
+
                         <div class="type">
                           <label for="pitcher">Pitcher</label>
                           <input type="checkbox" name="type" id="pitcher">
                         </div>
-  
-  
+
+
                       </div>
                     </div>
-  
+
                   </div>
                   <div class="card" id="card">
                     <div class="card-header" id="headingFive card-header">
@@ -280,27 +292,28 @@
                         </button>
                       </h5>
                     </div>
-  
-                    <div id="collapseFive" class="collapse show" aria-labelledby="headingFive" >
+
+                    <div id="collapseFive" class="collapse show" aria-labelledby="headingFive">
                       <div class="card-body">
-  
+
                         <form>
                           <div class="form-group">
                             <input type="range" class="form-control-range" id="formControlRange">
                           </div>
                         </form>
-  
-  
-  
+
+
+
                       </div>
                     </div>
                   </div>
-  
-  
+
+
                 </div>
-  
+
               </div>
-  
+
+
               <div class="products-list col-9">
                 <div class="btn-group sort">
                   <button class="btn " type="button">
@@ -311,13 +324,13 @@
                     <img src="/img/ChevronDown.svg">
                   </button>
                   <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Prices: Low to High</a>
-                    <a class="dropdown-item" href="#">Prices: High to Low</a>
-                    <a class="dropdown-item" href="#">Rating</a>
+                    <a class="dropdown-item high" href="#">Prices: Low to High</a>
+                    <a class="dropdown-item low" href="#">Prices: High to Low</a>
+                    <a class="dropdown-item rating" href="#">Rating</a>
                   </div>
                 </div>
                 <div class="products"></div>
-                  <!-- <div class="col-4">
+                <!-- <div class="col-4">
                     <a href="#" class=""><img src="img/homepage-up/Gold Serving Spoons.png" height="" alt="" /></a>
                     <h2 class="titleEl"><a href="#">Gold Serving Spoons</a></h2>
                     <div class="cost"><span>$ </span>39</div>
@@ -335,144 +348,208 @@
                     <div class="cost"><span>$ </span>39</div>
                     <button>ADD TO CART</button>
                   </div> -->
-  
-                </div>
+
               </div>
             </div>
           </div>
-          <div class="cart-footer container hidden">
-        
-            <div class="cart-row-down row">
-              <div class="cart-subtotal col-8">Subtotal</div>
-              <div class="cart-result col-1"></div>
-              <div class="cart-total-up col-3"><button>Checkout</button></div>
-            </div>
-            <div class="line"></div>
+        </div>
+        <div class="cart-footer container hidden">
+
+          <div class="cart-row-down row">
+            <div class="cart-subtotal col-8">Subtotal</div>
+            <div class="cart-result col-1"></div>
+            <div class="cart-total-up col-3 checkout-btn-single"><button>Checkout</button></div>
           </div>
-      </div>
-
-
-     
-
-
-
-
-      </div>
-
-      
-
-      </div>
-
-
-
-
-
-      <form class="cmxform" id="commentForm" novalidate method="get" action="">
-        <fieldset>
-            <legend>Please provide your name, email address (won't be published) and a comment</legend>
-            <p>
-    <!--            <label for="cname">Name (required, at least 2 characters)</label>-->
-                <span>Name:</span>
-                <input id="cname" name="name" type="text">
-            <p>
-                <label for="cemail">E-Mail</label>
-                <input id="cemail" type="email" name="contact">
-                <input type="checkbox" name="emailcheck" id="emailcheck">
-            </p>
-            <p>
-                <label for="curl">URL (optional)</label>
-                <input id="curl" type="url" name="url">
-            </p>
-            <p>
-                <label for="ccomment">Your comment (required)</label>
-                <textarea id="ccomment" name="comment"></textarea>
-            </p>
-            <p>
-                <input class="submit" type="submit" value="Submit">
-            </p>
-        </fieldset>
-    </form>
-
+          <div class="line"></div>
+        </div>
 
 
     
+      </div>
 
-<div class="container footer">
-        <div class="container">
-          <div class="row footer-link">
-            <div class="col">
-              <div class="title-footer">Need Help?</div>
-              <div class="list-need-help foot-list">
-                <a id="foo-item" href="">Chat with Us</a>
-                <a id="foo-item" href="">Contact US</a>
-                <a id="foo-item" href="">Order Status</a>
-                <a id="foo-item" href="">Shipping & Returns</a>
-                <a id="foo-item" href="">Search</a>
-                <a id="foo-item" href="">Privacy</a>
+      <div class="container authorisait-page hidden">
+        <div class="row">
+          <div class="col-md-offset-3 col-md-6">
+    
+            <div class="tab" role="tabpanel">
+              <!-- Nav tabs -->
+              <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#Section1" aria-controls="home" role="tab"
+                    data-toggle="tab">sign in</a></li>
+                <li role="presentation"><a href="#Section2" aria-controls="profile" role="tab" data-toggle="tab">sign up</a>
+                </li>
+              </ul>
+              <!-- Tab panes -->
+              <div class="tab-content tabs">
+                <div class="alert alert-warning alert-warning-in hidden" role="alert">
+                  Need to fill in an empty field!
+                </div>
+                <div class="alert alert-warning alert-none hidden" role="alert">
+                  Username or password entered incorrectly!
+                </div>
+                <div class="alert alert-primary auth-ok hidden" role="alert">
+                  Authorization was successful!
+                </div>
+                <div role="tabpanel" class="tab-pane fade in active" id="Section1">
+                  <form class="form-horizontal">
+                    <div class="form-group">
+                      <div class="alert alert-warning alert-email-in hidden" role="alert">
+                        The email address is not correct!
+                      </div>
+                      <label for="exampleInputEmail1">username</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1">
+                    </div>
+                    <div class="form-group">
+                      <div class="alert alert-warning alert-password-in hidden" role="alert">
+                        Password must be more than 5 symbols!
+                      </div>
+                      <label for="exampleInputPassword1">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="form-group">
+                      <button type="submit" class="btn btn-default sing-in">Sign in</button>
+                    </div>
+                  </form>
+                </div>
+                <div class="alert alert-warning alert-warning-up hidden" role="alert">
+                  Need to fill in an empty field!
+                </div>
+                <div class="alert alert-primary registr-ok hidden" role="alert">
+                  Registration completed successfully!
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="Section2">
+                  <form class="form-horizontal">
+                    <div class="form-group">
+                      <label for="exampleInputName1">First Name</label>
+                      <input type="text" class="form-control" id="exampleInputName1">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputName2">Last Name</label>
+                      <input type="text" class="form-control" id="exampleInputName2">
+                    </div>
+                    <div class="alert alert-warning alert-email hidden" role="alert">
+                      The email address is not correct!
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputEmail2">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail2">
+                    </div>
+                    <div class="alert alert-warning alert-password hidden" role="alert">
+                      Password must be more than 5 symbols!
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword2">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword2">
+                    </div>
+                    <div class="form-group">
+                      <button type="submit" class="btn btn-default sing-up">Sign up</button>
+                    </div>
+                  </form>
+                </div>
               </div>
             </div>
-      
-            <div class="col">
-              <div class="title-footer">Shopping</div>
-              <div class="list-shopping foot-list">
-                <a id="foo-item" href="">Store Location</a>
-                <a id="foo-item" href="">Outlet Store</a>
-                <a id="foo-item" href="">Warehouse Sale</a>
-                <a id="foo-item" href="">Rewards</a>
-                <a id="foo-item" href="">Reviews</a>
-              </div>
-            </div>
-      
-            <div class="col">
-              <div class="title-footer">More About US</div>
-              <div class="list-shopping-more-about foot-list">
-                <a id="foo-item" href="">Our Mission</a>
-                <a id="foo-item" href="">Our Story</a>
-                <a id="foo-item" href="">Our Craft</a>
-                <a id="foo-item" href="">Our Artisans</a>
-                <a id="foo-item" href="">Careers</a>
-              </div>
-            </div>
-      
-            <div class="col">
-              <div class="title-footer">Wholesale</div>
-              <div class="list-wholesale foot-list">
-                <a id="foo-item" href="">Wholesale Inquiries</a>
-              </div>
-            </div>
-      
-            <div class="col">
-              <div class="title-footer">Sweeter than Gelato</div>
-              <div class="list-sweeter-gelato foot-list">
-                <a id="foo-item" href="">Sign up for thr latest news and offers</a>
-              </div>
-              <div class="mail-set">
-                <input type="email" placeholder="Enter your email">
-              </div>
-        
-              <div class="social-down">
-                <a href=""><img id="facebook-down" src="/img/facebook-down.svg" alt=""></a>
-                <a href=""><img id="instagramm-down" src="/img/instagramm-down.svg" alt=""></a>
-                <a href=""><img id="youtube-down" src="/img/youtube-down.svg" alt=""></a>
-              </div>
+    
+          </div><!-- /.col-md-offset-3 col-md-6 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
 
 
-            </div>
-      
-            
-      
 
-      
-          </div>
-          </div>
-        </div>
-        <div class="rights">2019 Kelishek - All Rights Reserved</div>
-      </div>  
+
+
     </div>
+
+
+
+  </div>
   </div>
 
 
-    <script src="/bundle.js"></script>
+
+
+
+
+
+
+
+
+
+  <div class="container footer">
+    <div class="container">
+      <div class="row footer-link">
+        <div class="col">
+          <div class="title-footer">Need Help?</div>
+          <div class="list-need-help foot-list">
+            <a id="foo-item" href="">Chat with Us</a>
+            <a id="foo-item" href="">Contact US</a>
+            <a id="foo-item" href="">Order Status</a>
+            <a id="foo-item" href="">Shipping & Returns</a>
+            <a id="foo-item" href="">Search</a>
+            <a id="foo-item" href="">Privacy</a>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="title-footer">Shopping</div>
+          <div class="list-shopping foot-list">
+            <a id="foo-item" href="">Store Location</a>
+            <a id="foo-item" href="">Outlet Store</a>
+            <a id="foo-item" href="">Warehouse Sale</a>
+            <a id="foo-item" href="">Rewards</a>
+            <a id="foo-item" href="">Reviews</a>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="title-footer">More About US</div>
+          <div class="list-shopping-more-about foot-list">
+            <a id="foo-item" href="">Our Mission</a>
+            <a id="foo-item" href="">Our Story</a>
+            <a id="foo-item" href="">Our Craft</a>
+            <a id="foo-item" href="">Our Artisans</a>
+            <a id="foo-item" href="">Careers</a>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="title-footer">Wholesale</div>
+          <div class="list-wholesale foot-list">
+            <a id="foo-item" href="">Wholesale Inquiries</a>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="title-footer">Sweeter than Gelato</div>
+          <div class="list-sweeter-gelato foot-list">
+            <a id="foo-item" href="">Sign up for thr latest news and offers</a>
+          </div>
+          <div class="mail-set">
+            <input type="email" placeholder="Enter your email">
+          </div>
+
+          <div class="social-down">
+            <a href=""><img id="facebook-down" src="/img/facebook-down.svg" alt=""></a>
+            <a href=""><img id="instagramm-down" src="/img/instagramm-down.svg" alt=""></a>
+            <a href=""><img id="youtube-down" src="/img/youtube-down.svg" alt=""></a>
+          </div>
+
+
+        </div>
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+  <div class="rights">2019 Kelishek - All Rights Reserved</div>
+  </div>
+  </div>
+  </div>
+
+
+  <script src="/bundle.js"></script>
 </body>
 
 </html>
