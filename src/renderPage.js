@@ -8,6 +8,16 @@ export class RenderPage {
   }
 
   renderHomePage(products) {
+    const saleProd = document.querySelector('.home-page');
+    window.addEventListener('resize', e => {
+      e.preventDefault();
+      const whidth = document.documentElement.clientWidth;
+      if (whidth < 845) {
+        saleProd.classList.add('hidden')
+      }
+      else saleProd.classList.remove('hidden')
+    })
+
     const productsList = document.querySelector(CONFIG.selectors.productsList);
     const productCard = document.querySelector('.products');
     productCard.innerHTML = '';
@@ -23,72 +33,76 @@ export class RenderPage {
                   <div class="cost"><span>$ </span>${item.price}</div>
                   <button class="btn-add" data-id="${item.id}">ADD TO CART</button>
                 </div>`
-                
-    });
-    this.initProductPage(products);
-    // this.initDropdawn(products);
-    this.cart;
-    console.log('this.cart', this.cart)
-  }
-    
 
-  initDropdawn(products){
+    });
+    productsList.querySelectorAll('.product-item').forEach((item) => {
+      item.addEventListener('click', (e) => {
+        e.preventDefault();
+        const index = item.dataset.id;
+        window.history.pushState(null, null, `/product/${index}`);
+        this.router.render(decodeURI(location.pathname));
+      })
+    })
+    // this.initProductPage(products);
+    this.cart.addProduct(products)
+  }
+
+
+  initDropdawn(products) {
     const high = document.querySelector('.high');
     const low = document.querySelector('.low');
     const rating = document.querySelector('.rating');
-    
+
     high.addEventListener('click', e => {
       e.preventDefault();
-      products.sort(function(a, b){
-      return Number(a.price) - Number(b.price);
+      products.sort(function (a, b) {
+        return Number(a.price) - Number(b.price);
       })
       this.renderHomePage(products);
     });
     low.addEventListener('click', e => {
       e.preventDefault();
-      products.sort(function(a, b){
-      return Number(b.price) - Number(a.price);
+      products.sort(function (a, b) {
+        return Number(b.price) - Number(a.price);
       })
       this.renderHomePage(products);
     });
     rating.addEventListener('click', e => {
       e.preventDefault();
-      console.log('products', products)
-      products.sort(function(a, b){
+      products.sort(function (a, b) {
         return Number(b.id) - Number(a.id);
       });
-      console.log('products', products)
       this.renderHomePage(products);
     });
   }
-    
 
 
 
-  initProductPage(products) {
-    const colProduct = Array.prototype.slice.call(document.querySelectorAll(CONFIG.selectors.colProduct));
-    colProduct.forEach((item) => {
-      item.addEventListener('click', e => {
-        const index = item.dataset.id;
-        console.log('index', index)
-        window.history.pushState(null, null, `product/${index}`);
-        this.router.render(decodeURI(location.pathname));
-        this.renderProductPage(products);
-      })
-    })
-  }
-  
-  renderProductPage(products){
+
+  // initProductPage(products) {
+  //   const colProduct = Array.prototype.slice.call(document.querySelectorAll(CONFIG.selectors.colProduct));
+  //   colProduct.forEach((item) => {
+  //     item.addEventListener('click', e => {
+  //       const index = item.dataset.id;
+  //       window.history.pushState(null, null, `product/${index}`);
+  //       this.router.render(decodeURI(location.pathname));
+  //       this.renderProductPage(products);
+  //     })
+  //   })
+  // }
+
+  renderProductPage(products) {
     const index = location.pathname.split('/product/')[1].trim();
     products.forEach((item) => {
       if (item.id === Number(index)) {
         const pageList = document.querySelector(CONFIG.selectors.mainContentList);
+        // pageList.firstChild.remove();
         const page = document.querySelector(CONFIG.selectors.mainContent);
         page.classList.add(CONFIG.hidden);
         const div = document.createElement('div');
         pageList.append(div);
         div.innerHTML =
-                        `<div class="product-page container">
+          `<div class="product-page container">
                             <div class="row">
                               <div class="col-6">
                                 <img src="${item.image}" alt="">
@@ -112,11 +126,9 @@ export class RenderPage {
                                 </div>
                               </div>
                             </div>
-                          
 
                           <div class="container">
                             <div id="accordion" class="panel-group">
-
 
                               <div class="panel panel-default overview">
                                 <div class="panel-heading">
@@ -148,7 +160,7 @@ export class RenderPage {
 
                               </div>
                             </div>
-                          </div>`;
+                          </div>`
       }
     })
   }
@@ -192,30 +204,43 @@ export class RenderPage {
   // }
 
   renderSearchProduct(products) {
-    const page = document.querySelector(CONFIG.selectors.mainContent);
-    page.innerHTML = '';
-    products.forEach(item => {
+    const page = document.querySelector('.navbar');
+    const oldSearchlist = document.querySelector('.search-list');
+    if (oldSearchlist) {
+      oldSearchlist.remove();
+    }
+    if (oldSearchlist && products == null) {
+      oldSearchlist.remove();
+    } else {
+
+      const mainDiv = document.createElement('div');
+      mainDiv.classList.add('search-list')
+      page.append(mainDiv);
+      products.forEach(item => {
         const div = document.createElement('div');
-        page.append(div);
+        mainDiv.append(div);
         div.innerHTML = `
         <div class="col-fore" data-id="${item.id}">
-                  <div class="product-item" data-id="${item.id}">
-                    <a href="#" class=""><img src="${item.image}" height="" alt="" /></a>
-                    <h2 class="titleEl"><a href="#">${item.name}</a></h2>
+                  <div class="search-item" data-id="${item.id}">
+                    <a  class=""><img src="${item.image}" height="" alt="" /></a>
+                    <h2 class=""><a>${item.name}</a></h2>
                   </div>
-                  <div class="cost"><span>$ </span>${item.price}</div>
-                  <button class="btn-add" data-id="${item.id}">ADD TO CART</button>
                 </div>`
-    })
-    page.querySelectorAll('.col-fore').forEach((item) => {
+      })
+      page.querySelectorAll('.col-fore').forEach((item) => {
         item.addEventListener('click', (e) => {
-            e.preventDefault();
-            const index = item.dataset.id;
-            window.history.pushState(null, null, `/product/${index}`);
-            this.router.render(decodeURI(location.pathname));
+          e.preventDefault();
+          const index = item.dataset.id;
+          window.history.pushState(null, null, `/product/${index}`);
+          this.router.render(decodeURI(location.pathname));
+          console.log('location.pathname', location.pathname)
+
+          mainDiv.remove();
         });
-    });
+      });
+    }
   }
+
   render404() {
     history.pushState(null, null, '/404');
     this.router.render(decodeURI(location.pathname));

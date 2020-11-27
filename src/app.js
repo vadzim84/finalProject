@@ -1,3 +1,5 @@
+import './style.scss';
+
 import { CONFIG } from './config';
 import { RenderPage } from './renderPage';
 import { Router } from './router';
@@ -7,13 +9,15 @@ import { Checkbox } from './checkbox';
 import { Search } from './search';
 import { Authirize } from './authorize';
 
+
 class App {
   constructor() {
     this.products = [];
     this.users = [];
     this.router = new Router();
+    this.cart = new Cart(this.router);
+
     this.renderPage = new RenderPage(this.router, this.cart);
-    this.cart = new Cart(this.products, this.router);
     this.checkout = new Chechout();
     this.checkbox = new Checkbox();
     this.search = new Search(this.renderPage, this.router);
@@ -26,11 +30,11 @@ class App {
       .then((resolve) => resolve.json())
       .then((data) => {
         this.products = data;
-        this.renderPage.renderHomePage(data);
+        // this.renderPage.renderHomePage(data);
         // this.renderPage.initProductPage(data);
-        // this.renderPage.initDropdawn(data);
-        this.cart.addProduct(data);
-        this.cart.initCartPage();
+        this.renderPage.initDropdawn(data);
+        // this.cart.addProduct(data);
+        this.cart.initCartPage(data);
         this.cart.renderCartItem();
         this.search.initSearch(data);
         // this.checkout.initCheckoutPage();

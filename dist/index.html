@@ -8,7 +8,7 @@
   <link rel="shortcut icon" href="/./img/favicon.png" type="image/png">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Yeseva+One&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/style.css">
+  <!-- <link rel="stylesheet" href="/style.css"> -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -24,16 +24,71 @@
 
 <body>
   <div class="container">
-    <div class="header">
-      <div class="container">
+    <div class="header ">
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="col-2 logo">
+          <a class="navbar-brand " href=".">Kelishak</a>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto col-6 nav-set">
+            <li class="nav-item active">
+              <div class="nav-item"><a class=" nav-link">New</a></div>
+            </li>
+            <li class="nav-item">
+              <div class="nav-item"><a class=" nav-link">Collection</a></div>
+            </li>
+            <li class="nav-item ">
+              <div class="nav-item"><a class=" nav-link">Bestsellers</a></div>
+            </li>
+            <li class="nav-item">
+              <div class="nav-item"><a class=" nav-link">Gift Guide</a></div>
+            </li>
+            <li class="nav-item">
+              <div class="nav-item"><a class=" nav-link">Sale</a></div>
+            </li>
+          </ul>
+
+          <div class="col-4 client-items">
+            <div class="alert-primary aurth-ok hidden">
+              You are authorized!
+            </div>
+            <div class="nav-link search-btn">
+              <form>
+                <input class="input-search hidden" type="text" placeholder="Search...">
+                <button><img src="/./img/search.svg" class="search" alt=""></button>
+              </form>
+            </div>
+
+            <div><a class="nav-link authorize-btn" href=""><img src="/./img/contact.svg" class="contact" alt=""></a>
+
+            </div>
+            <div><a class="nav-link cart-btn" href=""><img src="/./img/basket.svg" class="cart" alt="">
+                <div class="cart-icon"></div>
+              </a></div>
+
+          </div>
+
+        </div>
+
+      </nav>
+
+
+      <!-- <div class="container">
         <div class="row navbar">
           <div class="col-2 logo"><a href="">Kelishak</a></div>
           <div class="col-6 nav-set">
             <div class="nav-item"><a class=" nav-link" href="">New</a></div>
             <div class="nav-item"><a class=" nav-link" href="">Collection</a></div>
             <div class="nav-item"><a class=" nav-link" href="">Bestsellers</a></div>
-            <!-- <div class="nav-item"><a class=" nav-link" href="">Gift Guide</a></div> -->
-            <!-- <div class="nav-item"><a class=" nav-link" href="">Sale</a></div> -->
+            <div class="nav-item"><a class=" nav-link" href="">Gift Guide</a></div>
+            <div class="nav-item"><a class=" nav-link" href="">Sale</a></div>
           </div>
           
           <div class="col-4 client-items">
@@ -56,12 +111,15 @@
           </div>
           
         </div>
-      </div>
+      </div> -->
     </div>
+
+
     <div class="container">
-    <div class="bying row hidden " style="justify-content: space-around; align-items: center;margin: 50px;">
-      <div class="col-8"><input type="text" style="width: 300px; height: 200px;" placeholder="Enter your shipping address "></div>
-      <div clss="col-4"><button style="width: 140px;
+      <div class="bying row hidden " style="justify-content: space-around; align-items: center;margin: 50px;">
+        <div class="col-8"><input type="text" style="width: 300px; height: 200px;"
+            placeholder="Enter your shipping address "></div>
+        <div clss="col-4"><button style="width: 140px;
         height: 50px;
         background: #112D45;
         border: 1px solid #112D45;
@@ -81,10 +139,11 @@
 
     <div class="main-content">
 
-      
-      <div class="errorPage hidden" style="display: block; "><img src="/./img/oops.jpg" alt="" style="width: 100%;"></div>
+
+      <div class="errorPage hidden" style="display: block; "><img src="/./img/oops.jpg" alt="" style="width: 100%;">
+      </div>
       <div class="main-content-list">
-       
+
 
         <div class="cart-header container hidden">
           <div>
@@ -97,13 +156,13 @@
           <div class="line"></div>
         </div>
 
-        <div class="main-page">
+        <div class="main-page page">
           <div class="home-page container">
             <div class="sale">
               <div class="old-price">Ocean Waves Salad Plates (Set Of 4) <br>
-                <div class="old">$41</div>
+                <div class="old">$39</div>
               </div>
-              <div class="new-price">Limited Time Offer <br> $16.4 <br> 60% off!</div>
+              <div class="new-price">Limited Time Offer <br> $15.5 <br> 60% off!</div>
               <button class="btn-lrg btn-add" data-id="22">add to cart</button>
             </div>
             <img src="/./img/homepage-up/ocean-waves-salad-plates-set-of-4-o.png" alt="">
@@ -324,9 +383,9 @@
                     <img src="/img/ChevronDown.svg">
                   </button>
                   <div class="dropdown-menu">
-                    <a class="dropdown-item high" href="#">Prices: Low to High</a>
-                    <a class="dropdown-item low" href="#">Prices: High to Low</a>
-                    <a class="dropdown-item rating" href="#">Rating</a>
+                    <a class="dropdown-item high">Prices: Low to High</a>
+                    <a class="dropdown-item low">Prices: High to Low</a>
+                    <a class="dropdown-item rating">Rating</a>
                   </div>
                 </div>
                 <div class="products"></div>
@@ -364,19 +423,20 @@
         </div>
 
 
-    
+
       </div>
 
       <div class="container authorisait-page hidden">
         <div class="row">
           <div class="col-md-offset-3 col-md-6">
-    
+
             <div class="tab" role="tabpanel">
               <!-- Nav tabs -->
               <ul class="nav nav-tabs" role="tablist">
                 <li role="presentation" class="active"><a href="#Section1" aria-controls="home" role="tab"
                     data-toggle="tab">sign in</a></li>
-                <li role="presentation"><a href="#Section2" aria-controls="profile" role="tab" data-toggle="tab">sign up</a>
+                <li role="presentation"><a href="#Section2" aria-controls="profile" role="tab" data-toggle="tab">sign
+                    up</a>
                 </li>
               </ul>
               <!-- Tab panes -->
@@ -448,7 +508,7 @@
                 </div>
               </div>
             </div>
-    
+
           </div><!-- /.col-md-offset-3 col-md-6 -->
         </div><!-- /.row -->
       </div><!-- /.container -->

@@ -12,7 +12,6 @@ export class Authirize{
       e.preventDefault();
       window.history.pushState(null, null, '/authorizate');
       this.router.render(decodeURI(location.pathname));
-
       this.getSingUp();
       this.getSingIn();
     })

@@ -5,7 +5,7 @@ export const CONFIG = {
     colProduct: ".product-item",
     mainContent: ".main-page",
     homePage: ".home-page",
-    btnAdd: ".btn-add, .product-page",
+    btnAdd: ".btn-add",
     cartIcon: ".cart-icon",
     xboxCart: ".xbox-cart",
     cartBtn: ".cart-btn",
@@ -18,7 +18,8 @@ export const CONFIG = {
     searchBtn: ".search-btn input",
     mainContentList: ".main-content-list",
     authorizeBtn: ".authorize-btn",
-    autorizatePage: ".authorisait-page"
+    autorizatePage: ".authorisait-page",
+    select: ".select"
 
 
   },

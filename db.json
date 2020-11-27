@@ -255,7 +255,7 @@
     {
       "id": 22,
       "name": "Ocean Waves Salad Plates (Set Of 4)",
-      "price": "16.4",
+      "price": "14.5",
       "material": "acrylic",
       "color": "blue",
       "type": "plate",
@@ -272,20 +272,7 @@
       "email": "vkaraniec@gmail.com",
       "password": "123456",
       "id": "bFC0_4P"
-    },
-    {
-      "userFName": "Vadzim",
-      "userSName": "Karanets",
-      "email": "vkaraniec@gmail.com",
-      "password": "654321",
-      "id": "gvTgTDj"
-    },
-    {
-      "userFName": "Vadzim",
-      "userSName": "Karanets",
-      "email": "vkaraniec@gmail.com",
-      "password": "zxcvbn",
-      "id": "7vqKith"
     }
+    
   ]
 }

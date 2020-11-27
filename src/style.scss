@@ -1,21 +1,33 @@
+// @import '~bootstrap';
+$text-color: #112D45;
+$btn-h: 50px;
+$main-font: Open Sans;
+$back-color: #F3F4F6;
+
+
 body{
-  background-color: #F3F4F6;
+  background-color: $back-color;
 }
+
+@media (max-width: 767px) {
+   
+}
+
 
 /* header */
 
 .header{
-  background: linear-gradient(0.04deg, #EDEEF0 0.44%, #F3F4F6 59.24%, #F3F4F6 84.89%);
+  background: linear-gradient(0.04deg, #EDEEF0 0.44%, $back-color 59.24%, $back-color 84.89%);
   box-shadow: 0px 0px 25px rgba(52, 52, 53, 0.15);
   margin-left: 30px;
   margin-right: 30px;
 }
 
-.navbar{
-  align-items: center;
-  justify-content: space-between;
-  height: 91px;
-}
+// .navbar{
+//   align-items: center;
+//   justify-content: space-between;
+//   height: 91px;
+// }
 
 .nav-set{
   display: flex;
@@ -29,7 +41,7 @@ body{
   justify-content: flex-end;
 }
 
-.container .logo a{
+.logo a{
   font-family: Yeseva One;
   font-style: normal;
   font-weight: normal;
@@ -37,25 +49,27 @@ body{
   line-height: 35px;
   text-decoration: none;
   text-transform: uppercase;
-  color: #112D45;
+  color: $text-color;
 
 }
 
-.container .nav-set a{
-  font-family: Open Sans;
+.nav-set a{
+  font-family: $main-font;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
   line-height: 18px;
   text-transform: capitalize;
-  color: #112D45;
+  color: $text-color;
   text-decoration: none;
 }
-.container .client-items a{
+
+.client-items a{
   font-size: 13px;
   line-height: 13px;
-  color: #112D45;
+  color: $text-color;
 }
+
 .xbox-cart{
 position: absolute;
 top: 7px;
@@ -87,7 +101,7 @@ left: 1px;
 /* sale page */
 
 .main-content{
-  background: linear-gradient(0.28deg, #EDEEF0 0.44%, #F3F4F6 59.24%, #F3F4F6 84.89%);
+  background: linear-gradient(0.28deg, #EDEEF0 0.44%, $back-color 59.24%, $back-color 84.89%);
   box-shadow: 0px 0px 25px rgba(52, 52, 53, 0.15);
   border-radius: 0px;
   margin-left: 30px;
@@ -102,14 +116,14 @@ justify-content: space-around;
 height: 500px;
 }
 
-.old-price{font-family: Open Sans;
+.old-price{font-family: $main-font;
 font-style: normal;
 font-weight: normal;
 font-size: 21px;
 line-height: 29px;
 text-align: center;
 
-color: #112D45;
+color: $text-color;
 margin-bottom: 20px;
 }
 .old-price .old{
@@ -117,31 +131,29 @@ margin-bottom: 20px;
 }
 
 .new-price{
-  font-family: Open Sans;
-font-style: normal;
-font-weight: normal;
-font-size: 21px;
-line-height: 29px;
-text-align: center;
-
-color: #802020;
-margin-bottom: 20px;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 29px;
+  text-align: center;
+  color: #802020;
+  margin-bottom: 20px;
 }
 
 .home-page .sale .btn-lrg{
-  font-family: Open Sans;
-font-style: normal;
-font-weight: normal;
-font-size: 15px;
-line-height: 20px;
-text-align: center;
-text-transform: uppercase;
-
-color: #112D45;
-border: 1px solid #46749B;
-box-sizing: border-box;
-width: 110.55px;
-height: 40px;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $text-color;
+  border: 1px solid #46749B;
+  box-sizing: border-box;
+  width: 110.55px;
+  height: 40px;
 }
 
 .home-page .sale{
@@ -171,7 +183,7 @@ height: 40px;
 /* products list */
 
 .checkboks-list{
-  background: linear-gradient(61.92deg, #112D45 41.86%, #245279 100.89%);
+  background: linear-gradient(61.92deg, $text-color 41.86%, #245279 100.89%);
   height: fit-content;
 }
 
@@ -186,7 +198,7 @@ height: 40px;
 
 .checkboks-list
  .card .btn{
-  font-family: Open Sans;
+  font-family: $main-font;
   font-style: normal;
   font-weight: normal;
   font-size: 21px;
@@ -201,7 +213,7 @@ height: 40px;
 
 }
 .material label, .type label{
-  font-family: Open Sans;
+  font-family: $main-font;
 font-style: normal;
 font-weight: normal;
 font-size: 14px;
@@ -230,14 +242,16 @@ vertical-align: super;
 /* footer */
 
 .footer{
+  display: flex;
   background: rgba(255, 255, 255, 0.5);
   margin-top: 30px;
+  // z-index: 5;
 }
 
 .foot-list a{
   display: flex;
   flex-direction: column;
-  font-family: Open Sans;
+  font-family: $main-font;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
@@ -246,12 +260,12 @@ vertical-align: super;
 }
 .title-footer{
   margin-bottom: 15px;
-  font-family: Open Sans;
+  font-family: $main-font;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
   line-height: 18px;
-  color: #112D45;
+  color: $text-color;
 }
 
 .social-down{
@@ -264,7 +278,7 @@ height: 24px;
 .mail-set input{
   margin-top: 20px;
   margin-bottom: 20px;
-  font-family: Open Sans;
+  font-family: $main-font;
   font-size: 13px;
   line-height: 13px;
   color: rgba(0, 0, 0, 0.7);
@@ -277,7 +291,7 @@ height: 24px;
   text-align: center;
   margin-top: 50px;
   margin-bottom: 60px;
-  font-family: Open Sans;
+  font-family: $main-font;
   font-size: 13px;
   line-height: 13px;
   text-align: center;
@@ -290,14 +304,14 @@ height: 24px;
   height: 195px;
 }
 .col-fore h2 a{
-  font-family: Open Sans;
+  font-family: $main-font;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
   line-height: 20px;
   text-align: center;
   text-decoration: none;
-  color: #112D45;
+  color: $text-color;
   width: 205px;
 }
 
@@ -326,29 +340,28 @@ text-align: center;
 }
 .col-fore button{
   width: 110px;
-height: 40px;
-border: 1px solid #46749B;
-box-sizing: border-box;
-font-family: Open Sans;
-font-style: normal;
-font-weight: normal;
-font-size: 15px;
-line-height: 20px;
-display: flex;
-align-items: center;
-text-align: center;
-
-color: #112D45;
+  height: 40px;
+  border: 1px solid #46749B;
+  box-sizing: border-box;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: $text-color;
 }
 
 .col-fore .cost{
-  font-family: Open Sans;
+  font-family: $main-font;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
   line-height: 20px;
   text-align: center;
-  color: #112D45;
+  color: $text-color;
   margin-bottom: 15px;
 }
 
@@ -362,25 +375,25 @@ color: #112D45;
   padding-left: 60px;
 }
 .panel-heading a{
-  font-family: Open Sans;
+  font-family: $main-font;
   font-style: normal;
   font-weight: 600;
   font-size: 21px;
   line-height: 29px;
   display: flex;
   align-items: center;
-  color: #112D45;
+  color: $text-color;
   text-decoration: none;
 }
 .product-page .panel-body{
-  font-family: Open Sans;
+  font-family: $main-font;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
   line-height: 20px;
   display: flex;
   align-items: center;
-  color: #112D45;
+  color: $text-color;
   margin-left: 40px;
 }
 .product-page .panel-default{
@@ -390,25 +403,25 @@ color: #112D45;
   padding-bottom: 30px;
 }
 .product-page .title-name{
-  font-family: Open Sans;
+  font-family: $main-font;
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
   line-height: 33px;
-  color: #112D45;
+  color: $text-color;
   margin-bottom: 55px;
   margin-top: 30px;
 }
 
 .product-page .price{
-  font-family: Open Sans;
+  font-family: $main-font;
 font-style: normal;
 font-weight: 600;
 font-size: 21px;
 line-height: 29px;
 display: flex;
 align-items: center;
-color: #112D45;
+color: $text-color;
 margin-bottom: 40px;
 }
 .product-page .quantity{
@@ -418,36 +431,36 @@ margin-bottom: 40px;
 }
 
 .product-page .quantity lable{
-  font-family: Open Sans;
+  font-family: $main-font;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
   line-height: 20px;
   display: flex;
   align-items: center;
-  color: #112D45;
+  color: $text-color;
   margin-right: 20px;
 }
 .product-page .quantity select{
   width: 60px;
   height: 30px;
-  border: 1px solid #112D45;
+  border: 1px solid $text-color;
   box-sizing: border-box;
   background: #E5E5E5;
 }
 
 .product-page button{
-  border: 1px solid #112D45;
+  border: 1px solid $text-color;
   box-sizing: border-box;
-  font-family: Open Sans;
+  font-family: $main-font;
   font-style: normal;
   font-weight: 600;
   font-size: 15px;
   line-height: 20px;
-  color: #112D45;
+  color: $text-color;
   text-transform: uppercase;
   width: 160px;
-  height: 50px
+  height: $btn-h;
 }
 
 .product-page button,
@@ -473,22 +486,22 @@ margin-bottom: 40px;
 .title-product-cart{
   margin-bottom: 60px;
   margin-top: 30px;
-  font-family: Open Sans;
+  font-family: $main-font;
   font-style: normal;
   font-weight: normal;
   font-size: 21px;
   line-height: 29px;
   display: flex;
   align-items: center;
-  color: #112D45;
+  color: $text-color;
 }
 
 .cart-page .select{
   width: 60px;
   height: 30px;
-  border: 1px solid #112D45;
+  border: 1px solid $text-color;
   box-sizing: border-box;
-  font-family: Open Sans;
+  font-family: $main-font;
   font-style: normal;
   font-weight: normal;
   font-size: 21px;
@@ -496,7 +509,7 @@ margin-bottom: 40px;
   display: flex;
   align-items: center;
   text-align: center;
-  color: #112D45;
+  color: $text-color;
   background: #E5E5E5;
   display: flex;
   align-items: center;
@@ -505,11 +518,11 @@ margin-bottom: 40px;
 .cart-page .checkout-btn-single button,
 .cart-footer button{
     width: 140px;
-    height: 50px;
-    background: #112D45;
-    border: 1px solid #112D45;
+    height: $btn-h;
+    background: $text-color;
+    border: 1px solid $text-color;
     box-sizing: border-box;
-    font-family: Open Sans;
+    font-family: $main-font;
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
@@ -527,26 +540,26 @@ margin-bottom: 40px;
 .cart-page .remove-btn button{
   width: 80px;
   height: 30px;
-  font-family: Open Sans;
+  font-family: $main-font;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   display: flex;
   align-items: center;
-  color: #112D45;
-  border: 1px solid #112D45;
+  color: $text-color;
+  border: 1px solid $text-color;
   box-sizing: border-box;
 }
 .cart-page .cart-price,
 .cart-footer .result-price{
-  font-family: Open Sans;
+  font-family: $main-font;
   font-style: normal;
   font-weight: normal;
   font-size: 21px;
   line-height: 29px;
   display: flex;
   align-items: center;
-  color: #112D45;
+  color: $text-color;
 }
 
 
@@ -564,7 +577,7 @@ margin-bottom: 40px;
 }
 
 .cart-name{
-  font-family: Open Sans;
+  font-family: $main-font;
   font-style: normal;
   font-weight: 600;
   font-size: 21px;
@@ -572,20 +585,20 @@ margin-bottom: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #112D45;
+  color: $text-color;
   padding: 30px;
 }
 
 .cart-row-up,
 .cart-row-down{
   display: flex;
-  font-family: Open Sans;
+  font-family: $main-font;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
   line-height: 18px;
   text-transform: capitalize;
-  color: #112D45;
+  color: $text-color;
   padding-bottom: 10px;
 }
 .cart-row-up{
@@ -608,16 +621,20 @@ margin-bottom: 40px;
 }
 
 .cart-subtotal{
-  font-family: Open Sans;
+  font-family: $main-font;
   font-style: normal;
   font-weight: normal;
   font-size: 21px;
   line-height: 29px;
   text-transform: capitalize;
-  color: #112D45;
+  color: $text-color;
 }
 
 /* search */
+
+.search-btn{
+  padding-right: 0;
+}
 
 .search-btn form {
   position: relative;
@@ -643,7 +660,7 @@ margin-bottom: 40px;
 .search-btn input:hover {
   width: 100%;
   z-index: 1;
-  border-bottom: 1px solid#112D45;
+  border-bottom: 1px solid$text-color;
 }
 .search-btn button {
   background: none;
@@ -655,12 +672,47 @@ margin-bottom: 40px;
   right: 0;
   cursor: pointer;
 }
-.search-btn button:before {
+.search-btn button{
   content: "\f002";
-  font-family: Open Sans;
+  font-family: $main-font;
   font-size: 16px;
   color: #F9F0DA;
 }
+.input-search{
+  background-color: #EDEEF0;
+  z-index: 100;
+}
+
+/* search-list page*/
+
+.search-list{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 100;
+  top: 75px;
+  left: 630px;
+  background:#46749B;
+}
+
+@media (max-width: 1092px) {
+  .search-list{ top: 270px;
+  left: 30px;
+  }
+}
+
+.search-item{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.search-item img{
+  height: 50px;
+  width: auto;
+  margin-right: 15px;
+}
+
 
 /* authorisait page */
 
@@ -692,7 +744,7 @@ margin-bottom: 40px;
 }
 .authorisait-page .tab .nav-tabs li a{
   font-size: 18px;
-  color: #112D45;
+  color: $text-color;
   border-radius: 0;
   text-transform: uppercase;
   background: transparent;
@@ -703,15 +755,15 @@ margin-bottom: 40px;
   opacity: 0.5;
   position: relative;
   transition: all 0.5s ease 0s;
-  font-family: Open Sans;
+  font-family: $main-font;
 }
 .authorisait-page .tab .nav-tabs li a.active{
   border: none;
   background: transparent;
   opacity: 1;
-  border-bottom: 2px solid #112D45;
-  color: #112D45;
-  font-family: Open Sans;
+  border-bottom: 2px solid $text-color;
+  color: $text-color;
+  font-family: $main-font;
 }
 .authorisait-page .tab .tab-content{
   padding: 20px 0 0 0;
@@ -721,7 +773,7 @@ margin-bottom: 40px;
   position: relative;
 }
 .authorisait-page .form-bg{
-  background: #112D45;
+  background: $text-color;
 }
 .authorisait-page .form-horizontal .form-group{
   margin: 0 0 15px 0;
@@ -734,10 +786,10 @@ margin-bottom: 40px;
   padding: 0 20px;
   font-size: 14px;
   font-weight: bold;
-  color: #112D45;
+  color: $text-color;
   transition: all 0.3s ease 0s;
   border-radius: unset;
-  font-family: Open Sans;
+  font-family: $main-font;
 }
 .authorisait-page .form-horizontal .form-control:focus{
   box-shadow: none;
@@ -745,10 +797,10 @@ margin-bottom: 40px;
 }
 .authorisait-page .form-horizontal .form-group label{
   padding: 0 20px;
-  color: #112D45;
+  color: $text-color;
   text-transform: capitalize;
   margin-bottom: 10px;
-  font-family: Open Sans;
+  font-family: $main-font;
 }
  
 .authorisait-page .form-horizontal .btn{
@@ -757,20 +809,20 @@ margin-bottom: 40px;
   padding: 10px 20px;
   font-size: 14px;
   font-weight: bold;
-  color: #112D45;
+  color: $text-color;
   text-transform: uppercase;
   margin: 20px 0 30px 0;
-  border: 1px solid #112D45;
+  border: 1px solid $text-color;
   border-radius: unset;
-  font-family: Open Sans;
+  font-family: $main-font;
 }
 .authorisait-page .form-horizontal .btn:focus{
   background: #E5E5E5;
-  color: #112D45;
+  color: $text-color;
   outline: none;
   box-shadow: none;
   border-radius: unset;
-  font-family: Open Sans;
+  font-family: $main-font;
 }
  
 @media only screen and (max-width: 479px){

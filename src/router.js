@@ -5,12 +5,9 @@ export class Router{
   constructor(){
     this.routes = {
       '404': () => {
-          console.log('Not found');
       },
-     
-    }  
+    }
     this.mainContent = document.querySelector(CONFIG.selectors.mainContent);
-    console.log('this.mainContent', this.mainContent)
 
     window.addEventListener('popstate', e => {
       this.render(decodeURI(window.location.pathname))
@@ -25,10 +22,11 @@ export class Router{
 
   render(url){
     let temp = url.split('/')[1];
-    [...this.mainContent].forEach((page) => {
-        page.classList.remove(CONFIG.visible)
-        console.log('page', page)
-    });
+
+    // [...this.mainContent].forEach((page) => {
+    //     page.classList.remove(CONFIG.visible)
+    //     console.log('page', page)
+    // });
     this.routes[temp] ? this.routes[temp]() : this.routes['404']();
   }
 
